@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Business.Base.Services
 {
-    partialh class UserService
+    partial class UserService
     {
     }
 }
