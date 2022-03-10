@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.UnitofWork
 {
-    public class UnitofWork<T> : IUnitofWork
+    public class UnitofWork : IUnitofWork,IDisposable
     {
         private DbContext _masterContext;
 
