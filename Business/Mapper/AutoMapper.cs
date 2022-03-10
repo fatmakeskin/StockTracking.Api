@@ -16,7 +16,9 @@ namespace Business.Mapper
             CreateMap<User, UserDto>();
             CreateMap<UserDto, User>();   
             CreateMap<Comment,CommentDto>();
+            CreateMap<CommentDto, Comment>();
             CreateMap<Stock, StockDto>();
+            CreateMap<StockDto, Stock>();
         }
     }
 }

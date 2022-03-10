@@ -10,8 +10,7 @@ namespace Data.Context
 {
     public class MasterContext : DbContext
     {
-        //public MasterContext(DbContextOptions<MasterContext> optionBuilder) : base(optionBuilder){}
-        //public MasterContext(){}
+      
         public MasterContext(DbContextOptions<MasterContext> options) : base(options) { }
         public MasterContext()
         {

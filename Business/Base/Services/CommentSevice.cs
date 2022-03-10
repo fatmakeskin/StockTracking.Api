@@ -20,22 +20,18 @@ namespace Business.Base.Services
             mapper = _mapper;
             this.uow = unitofWork;
         }
-        public void Add(CommentDto model)
+        public void Add(CommentDto model)        
         {
-
             Comment result = mapper.Map<Comment>(model);
             uow.GetRepository<Comment>().Add(result);
             uow.SaveChange();
-
         }
 
         public void Delete(CommentDto model)
         {
-
             Comment result = mapper.Map<Comment>(model);
             uow.GetRepository<Comment>().Delete(result);
             uow.SaveChange();
-
         }
 
         public IEnumerable<CommentDto> GetAll()
@@ -48,20 +44,16 @@ namespace Business.Base.Services
 
         public CommentDto GetById(int id)
         {
-
             var data = uow.GetRepository<Comment>().GetById(id);
             CommentDto result = mapper.Map<CommentDto>(data);
             return result;
-
         }
 
         public void Update(CommentDto model)
         {
-
             Comment result = mapper.Map<Comment>(model);
             uow.GetRepository<Comment>().Update(result);
             uow.SaveChange();
-
         }
     }
 }

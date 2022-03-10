@@ -39,26 +39,20 @@ namespace Business.Base.Services
             var data = uow.GetRepository<Stock>().GetAll();
             IEnumerable<StockDto> result = mapper.Map<IEnumerable<StockDto>>(data);
             return result;
-
         }
-
 
         public StockDto GetById(int id)
         {
-
             Stock data = uow.GetRepository<Stock>().GetById(id);
             StockDto result = mapper.Map<StockDto>(data);
             return result;
-
         }
 
         public void Update(StockDto model)
         {
-
             Stock data = mapper.Map<Stock>(model);
             uow.GetRepository<Stock>().Update(data);
             uow.SaveChange();
-
         }
     }
 }

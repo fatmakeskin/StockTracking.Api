@@ -37,21 +37,16 @@ namespace Business.Base.Services
 
         public IEnumerable<UserDto> GetAll()
         {
-
             var data = uow.GetRepository<User>().GetAll();
             IEnumerable<UserDto> result = mapper.Map<IEnumerable<UserDto>>(data);
             return result;
-
-
         }
 
         public UserDto GetById(int id)
         {
-
             User data = uow.GetRepository<User>().GetById(id);
             UserDto result = mapper.Map<UserDto>(data);
             return result;
-
         }
 
         public void Update(UserDto model)
