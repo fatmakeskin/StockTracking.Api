@@ -32,10 +32,8 @@ namespace stocktracking
         public void ConfigureServices(IServiceCollection services)
         {
             
-            services.AddDbContext<MasterContext>();
-            //services.AddAutoMapper(Assembly.GetExecutingAssembly());
-            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-            
+            services.AddDbContext<MasterContext>();          
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());            
             services.AddScoped<IUnitofWork, UnitofWork>();
             services.AddScoped<IUserService, UserService>();  
             services.AddScoped<IStockService, StockService>();  
