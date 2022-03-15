@@ -11,5 +11,7 @@ namespace Data.Dto
         public int CommentId { get; set; }
         public string Content { get; set; }
         public DateTime Date { get; set; }
+        public int UserId { get; set; }
+        public int StockId { get; set; }
     }
 }
