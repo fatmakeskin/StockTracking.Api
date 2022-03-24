@@ -7,14 +7,15 @@ using System.Threading.Tasks;
 
 namespace Data.Entities
 {
-    public class Stock
+    public class StockDetail
     {
         [Key]
+        public int StockScale { get; set; }
+        public int StockTrade { get; set; }
+        public int StockDailyInterval { get; set; }
+
         public int StockId { get; set; }
         public string StockName { get; set; }
-
-        public List<Comment> Comments { get; set; }
-
-        public List<StockDetail> StockDetail { get; set; }
+        public Stock Stock { get; set; }
     }
 }

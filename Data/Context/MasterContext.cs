@@ -26,6 +26,7 @@ namespace Data.Context
         {
             modelBuilder.Entity<User>().HasMany(x => x.Comments).WithOne(x => x.User).HasForeignKey(x => x.UserId).OnDelete(DeleteBehavior.Cascade);
             modelBuilder.Entity<Stock>().HasMany(x => x.Comments).WithOne(x => x.Stock).HasForeignKey(x => x.StockId).OnDelete(DeleteBehavior.Cascade);
+            modelBuilder.Entity<Stock>().HasMany(p => p.StockDetail).WithOne(b => b.Stock).HasForeignKey(p => p.StockId).OnDelete(DeleteBehavior.Cascade);
             base.OnModelCreating(modelBuilder);
         }
     }
