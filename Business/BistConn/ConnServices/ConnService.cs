@@ -12,9 +12,10 @@ using System.Threading.Tasks;
 
 namespace Business.BistConn.ConnService
 {
-    public class ConnServicee
+    public class ConnService
+
     {
-        private static readonly string apiBasicUri = ConfigurationManager.AppSettings["apiBasicUri"];
+        private static readonly string apiBasicUri = "";
 
         public static async Task Post<T>(string url, T contentValue)
         {
@@ -26,7 +27,7 @@ namespace Business.BistConn.ConnService
                 result.EnsureSuccessStatusCode();
             }
         }
-        public static async Task Put<T>(string url, T stringValue)
+        public static async Task Put<T>(string url, T stringValue) 
         {
             using (var client = new HttpClient())
             {
@@ -36,7 +37,7 @@ namespace Business.BistConn.ConnService
                 result.EnsureSuccessStatusCode();
             }
         }
-        public static async Task<T> Get<T>(string url)
+        public static async Task<T> Get<T>(string url) 
         {
             using (var client = new HttpClient())
             {
