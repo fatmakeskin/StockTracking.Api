@@ -20,7 +20,6 @@ namespace stocktracking.Controllers
             {
                 userService.GetById(userId);
                 return Ok();
-
             }
             catch (System.Exception ex)
             {

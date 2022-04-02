@@ -13,7 +13,6 @@ namespace Data.Entities
         public int StockScale { get; set; }
         public int StockTrade { get; set; }
         public int StockDailyInterval { get; set; }
-
         public int StockId { get; set; }
         public string StockName { get; set; }
         public Stock Stock { get; set; }

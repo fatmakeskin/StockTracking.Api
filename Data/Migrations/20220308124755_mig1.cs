@@ -74,7 +74,6 @@ namespace Data.Migrations
                 table: "Comments",
                 column: "UserId");
         }
-
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(

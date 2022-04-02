@@ -14,7 +14,6 @@ namespace Data.Entities
         public string StockName { get; set; }
 
         public List<Comment> Comments { get; set; }
-
         public List<StockDetail> StockDetail { get; set; }
     }
 }

@@ -16,7 +16,6 @@ namespace Business.BistConn.ConnService
 
     {
         private static readonly string apiBasicUri = "";
-
         public static async Task Post<T>(string url, T contentValue)
         {
             using (var client = new HttpClient())

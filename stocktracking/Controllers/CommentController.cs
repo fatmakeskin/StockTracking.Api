@@ -20,7 +20,6 @@ namespace stocktracking.Controllers
             {
                 commentService.GetById(commentId);
                 return Ok();
-
             }
             catch (System.Exception ex)
             {

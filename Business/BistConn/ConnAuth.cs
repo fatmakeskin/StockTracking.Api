@@ -20,7 +20,6 @@ namespace Business.BistConn
                 context.Result = new UnauthorizedResult();
                 return;
             }
-
             var decodeUserAndPass = auth.Split(' ', 2, StringSplitOptions.RemoveEmptyEntries)[1]?.Trim();
             var encodeUser = Encoding.UTF8.GetString(Convert.FromBase64String(decodeUserAndPass));
 
