@@ -37,7 +37,8 @@ namespace stocktracking
             services.AddScoped<IUnitofWork, UnitofWork>();
             services.AddScoped<IUserService, UserService>();  
             services.AddScoped<IStockService, StockService>();  
-            services.AddScoped<ICommentService, CommentSevice>();  
+            services.AddScoped<ICommentService, CommentSevice>(); 
+            
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

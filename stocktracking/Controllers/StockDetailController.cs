@@ -11,8 +11,7 @@ namespace stocktracking.Controllers
         public StockDetailController(ConnService _connService)  
         {
             connService = _connService;
-        }
-        
+        }      
 
     }
 }

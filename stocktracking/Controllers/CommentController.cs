@@ -9,6 +9,7 @@ namespace stocktracking.Controllers
     public class CommentController:ControllerBase
     {
         private readonly ICommentService commentService;
+
         public CommentController(ICommentService _commentService)
         {
             commentService = _commentService;
