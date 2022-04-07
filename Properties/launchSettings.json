@@ -1,13 +1,13 @@
-{
+﻿{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:56160",
+      "applicationUrl": "http://localhost:23323",
       "sslPort": 0
     }
   },
-  "$schema": "http://json.schemastore.org/launchsettings.json",
   "profiles": {
     "IIS Express": {
       "commandName": "IISExpress",
@@ -17,16 +17,15 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "StockTracking": {
+    "stocktracking": {
       "commandName": "Project",
+      "dotnetRunMessages": "true",
       "launchBrowser": true,
       "launchUrl": "swagger",
+      "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development",
-        "MYSQL": "Server=localhost;Database=stocktracking;User=root;Password=root;"
-      },
-      "dotnetRunMessages": "true",
-      "applicationUrl": "http://localhost:5000"
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
     }
   }
 }

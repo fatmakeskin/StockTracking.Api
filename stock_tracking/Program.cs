@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace stocktracking
+namespace stock_tracking
 {
     public class Program
     {
